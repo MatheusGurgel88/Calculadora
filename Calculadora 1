@@ -13,18 +13,15 @@ def on_click(event):
     else:
         entry_var.set(entry_var.get() + text)
 
-# Criando a janela principal
 root = tk.Tk()
 root.title("Calculadora")
 root.geometry("300x400")
 
 entry_var = tk.StringVar()
 
-# Campo de entrada
 entry = tk.Entry(root, textvar=entry_var, font=("Arial", 20), justify='right', bd=10, relief=tk.SUNKEN)
 entry.pack(fill=tk.BOTH, ipadx=8, pady=10, padx=10)
 
-# Botões
 buttons = [
     ["7", "8", "9", "/"],
     ["4", "5", "6", "*"],
